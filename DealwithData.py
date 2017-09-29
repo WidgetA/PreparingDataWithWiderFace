@@ -37,7 +37,6 @@ for i in range(lines):
             po_h = box_line.index(' ', po_w + 1)
             h = box_line[po_w:po_h]
             coordinates = x1 + y1 + w + h
-            # print(coordinates)
             if not(os.path.exists(FILEDIR + "wider_face_train\\" + folder_name)):
                 os.makedirs(FILEDIR + "wider_face_train\\" + folder_name)
             with open(FILEDIR + "wider_face_train\\"+ folder_name + "\\" + file_name + ".txt", 'a') as f:
